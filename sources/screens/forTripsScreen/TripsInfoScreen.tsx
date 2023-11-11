@@ -1,6 +1,7 @@
 import React from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Linking, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import FirstIcon from 'react-native-vector-icons/Entypo';
 
 function TripsInfoScreen() {
   return (
@@ -37,9 +38,28 @@ function TripsInfoScreen() {
             <Text style={[styles.infoLabel, {textAlign: 'left'}]}>
               водитель
             </Text>
-            <Text style={[styles.infoValue, {textAlign: 'left'}]}>
-              Маркелов Артемий
-            </Text>
+            <View
+              style={{
+                flexDirection: 'row',
+                flexWrap: 'nowrap',
+                alignItems: 'center',
+              }}>
+              <Text style={[styles.infoValue, {textAlign: 'left'}]}>
+                Маркелов Артемий
+              </Text>
+              <View style={{marginLeft: '5%'}}>
+                <TouchableOpacity
+                  onPress={() =>
+                    Linking.openURL('https://vk.com/sankok2000two')
+                  }>
+                  <FirstIcon
+                    name="vk-alternitive"
+                    size={22}
+                    color={'rgb(0,119,255)'}
+                  />
+                </TouchableOpacity>
+              </View>
+            </View>
           </View>
           <View style={{width: '100%', flex: 0.2}}>
             <Text style={[styles.infoLabel, {textAlign: 'left'}]}>
