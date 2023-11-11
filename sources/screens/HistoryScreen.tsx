@@ -1,8 +1,8 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import OneHistoryComponent from '../components/forHistoryScreen/OneHistoryComponent';
 
-function AddScreen() {
+function HistoryScreen() {
   return (
     <SafeAreaView>
       <OneHistoryComponent />
@@ -10,4 +10,4 @@ function AddScreen() {
   );
 }
 
-export default AddScreen;
+export default HistoryScreen;

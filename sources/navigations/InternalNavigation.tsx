@@ -1,15 +1,15 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import React from 'react';
-import ApplicationScreen from '../screens/ApplicationScreen';
 import ProfileScreen from '../screens/ProfileScreen';
-import AddScreen from '../screens/AddScreen';
+import HistoryScreen from '../screens/HistoryScreen';
 
 // @ts-ignore
-import FirstIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+import FirstIcon from 'react-native-vector-icons/FontAwesome5';
 // @ts-ignore
-import SecondIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+import SecondIcon from 'react-native-vector-icons/FontAwesome5';
 // @ts-ignore
 import ThirdIcon from 'react-native-vector-icons/AntDesign';
+import TripsScreenNavigation from './forTripsScreen/TripsScreenNavigation';
 
 const Tab = createBottomTabNavigator();
 
@@ -18,7 +18,7 @@ export default function InternalNavigation() {
     <Tab.Navigator
       screenOptions={{
         tabBarHideOnKeyboard: true,
-        headerShown: true, // Название экрана сверху
+        headerShown: false, // Название экрана сверху
         tabBarShowLabel: false, // Подписи под иконками
         tabBarStyle: {
           borderTopRightRadius: 15,
@@ -26,14 +26,14 @@ export default function InternalNavigation() {
           height: 60,
         },
       }}
-      initialRouteName="ApplicationScreen">
+      initialRouteName="TripsScreenNavigation">
       <Tab.Screen
-        name="AddScreen"
-        component={AddScreen}
+        name="HistoryScreen"
+        component={HistoryScreen}
         options={{
           tabBarIcon: ({focused}) => (
             <FirstIcon
-              name="application-edit"
+              name="history"
               size={28}
               color={!focused ? '#000000' : '#886DEC'}
             />
@@ -41,20 +41,20 @@ export default function InternalNavigation() {
         }}
       />
       <Tab.Screen
-        name="ApplicationScreen"
-        component={ApplicationScreen}
+        name="TripsScreenNavigation"
+        component={TripsScreenNavigation}
         options={{
           tabBarIcon: ({focused}) => (
             <SecondIcon
-              name="application"
-              size={35}
+              name="route"
+              size={28}
               color={!focused ? '#000000' : '#886DEC'}
             />
           ),
         }}
       />
       <Tab.Screen
-        name="Профиль"
+        name="ProfileScreen"
         component={ProfileScreen}
         options={{
           tabBarIcon: ({focused}) => (

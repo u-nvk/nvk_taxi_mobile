@@ -1,28 +1,43 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {NavigationProp} from '@react-navigation/native';
 
-export default function OneApplicationComponent() {
+export default function OneApplicationComponent({
+  navigation,
+  route,
+}: {
+  navigation: NavigationProp<any>;
+  route: string;
+}) {
   return (
     <TouchableOpacity
-      style={[
-        {
-          borderRadius: 15,
-          alignSelf: 'center',
-          marginBottom: '3%',
-          marginTop: '2%',
-          width: '98%',
-        },
-      ]}>
-      <View style={{backgroundColor: 'red', height: 220, borderRadius: 15, alignItems:'center', justifyContent: 'center'}}>
-        <View style={{flexDirection: 'row', width: '100%', justifyContent: 'space-between', backgroundColor:'green'}}>
-          <View style={{width: '33%', alignItems:'center'}}>
-            <Text style={{fontSize:25}}>КПП №2</Text>
+      style={styles.touchableStyle}
+      onPress={() => navigation.navigate('TripsInfoScreen')}>
+      <View style={styles.mainView}>
+        <View style={styles.nameMainView}>
+          <Text style={styles.nameText}>{route}</Text>
+        </View>
+
+        <View style={styles.infoMainView}>
+          <View style={{flex: 0.33, alignItems: 'flex-start'}}>
+            <View style={{alignItems: 'center'}}>
+              <Text style={styles.infoLabel}>отправление</Text>
+              <Text style={styles.infoValue}>21:18</Text>
+            </View>
           </View>
-          <View style={{width: '33%', alignItems:'center'}}>
-            <Text style={{fontSize:25}}>18:00</Text>
+
+          <View style={{flex: 0.33, alignItems: 'center'}}>
+            <View style={{alignItems: 'center'}}>
+              <Text style={styles.infoLabel}>стоимость</Text>
+              <Text style={styles.infoValue}>100₽</Text>
+            </View>
           </View>
-          <View style={{width: '33%', alignItems:'center'}}>
-            <Text style={{fontSize:25}}>ГУК</Text>
+
+          <View style={{flex: 0.33, alignItems: 'flex-end'}}>
+            <View style={{alignItems: 'center'}}>
+              <Text style={styles.infoLabel}>свободно</Text>
+              <Text style={styles.infoValue}>2</Text>
+            </View>
           </View>
         </View>
       </View>
@@ -31,13 +46,50 @@ export default function OneApplicationComponent() {
 }
 
 const styles = StyleSheet.create({
-  parentsView: {
-    backgroundColor: 'white',
-    alignItems: 'center',
-    paddingHorizontal: '3%',
-    paddingVertical: '4%',
+  touchableStyle: {
     width: '100%',
+    borderRadius: 15,
+    alignSelf: 'center',
+    marginBottom: '3%',
+    marginTop: '2%',
+  },
+  mainView: {
+    paddingRight: '5%',
+    paddingLeft: '5%',
+    width: '100%',
+    backgroundColor: '#FFF',
+    height: 120,
+    borderRadius: 15,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  nameMainView: {
+    justifyContent: 'center',
+    width: '100%',
+    flex: 0.4,
+  },
+  infoMainView: {
     flexDirection: 'row',
     flexWrap: 'nowrap',
+    justifyContent: 'space-between',
+    width: '100%',
+    flex: 0.6,
+    alignItems: 'center',
+  },
+  nameText: {
+    fontSize: 17,
+    fontWeight: '600',
+    color: 'black',
+  },
+  infoLabel: {
+    fontSize: 13,
+    color: 'gray',
+    textAlign: 'center',
+  },
+  infoValue: {
+    fontSize: 24,
+    fontWeight: '600',
+    textAlign: 'center',
+    color: 'black',
   },
 });
