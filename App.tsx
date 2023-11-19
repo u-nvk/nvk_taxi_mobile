@@ -11,7 +11,7 @@ function App(): Element {
   const checkAuth = async () => {
     try {
       const token = await AsyncStorage.getItem('access_token');
-      console.log(token)
+      console.log(token);
       if (token) {
         setIsAuth(true);
         setIsLoading(false);
