@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
   },
   infoLabel: {
-    fontSize: 15,
+    fontSize: 14,
     color: 'gray',
     textAlign: 'center',
     fontFamily: 'Montserrat-SemiBold',

@@ -33,7 +33,11 @@ function App(): Element {
   return (
     <AuthContext.Provider value={{isAuth, setIsAuth}}>
       <View style={[{backgroundColor: '#F3F2F8', height: '100%'}]}>
-        <StatusBar backgroundColor={'transparent'} translucent={true} barStyle={'dark-content'}/>
+        <StatusBar
+          backgroundColor={'transparent'}
+          translucent={true}
+          barStyle={'dark-content'}
+        />
         {isLoading ? (
           <View style={[{marginTop: '50%'}]}>
             <ActivityIndicator animating={true} size="large" color="#C5C5C5" />
