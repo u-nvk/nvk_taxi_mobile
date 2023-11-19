@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: 'gray',
     textAlign: 'center',
-    fontFamily: 'Montserrat-SemiBold'
+    fontFamily: 'Montserrat-Bold'
   },
   infoValue: {
     fontSize: 24,
