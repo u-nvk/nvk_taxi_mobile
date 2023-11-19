@@ -96,7 +96,8 @@ function TripsInfoScreen() {
 const styles = StyleSheet.create({
   buttonText: {
     color: 'black',
-    fontSize: 16,
+    fontSize: 20,
+    fontFamily: 'Montserrat-Bold'
   },
   buttonStyle: {
     borderRadius: 10,
@@ -116,20 +117,23 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
   },
   infoLabel: {
-    fontSize: 13,
+    fontSize: 15,
     color: 'gray',
     textAlign: 'center',
+    fontFamily: 'Montserrat-Medium'
   },
   infoValue: {
-    fontSize: 24,
+    fontSize: 21,
     fontWeight: '600',
     textAlign: 'center',
     color: 'black',
+    fontFamily: 'Montserrat-SemiBold'
   },
   nameText: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: '600',
     color: 'black',
+    fontFamily: 'Montserrat-SemiBold'
   },
   infoView: {
     paddingHorizontal: '5%',

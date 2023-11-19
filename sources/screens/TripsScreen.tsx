@@ -83,8 +83,9 @@ const styles = StyleSheet.create({
   },
   buttonTextStyle: {
     textAlign: 'center',
-    fontSize: 17,
+    fontSize: 23,
     color: 'black',
+    fontFamily: 'Montserrat-SemiBold'
   },
 });
 export default TripsScreen;

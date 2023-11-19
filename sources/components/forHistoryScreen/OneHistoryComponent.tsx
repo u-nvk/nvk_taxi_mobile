@@ -14,13 +14,13 @@ export default function OneHistoryComponent() {
       ]}>
       <View style={[styles.parentsView]}>
         <View style={[{width: '36%'}]}>
-          <Text style={[{fontSize: 20}]}>Гринвич</Text>
+          <Text style={[{fontSize: 20, fontFamily: 'Montserrat-SemiBold'}]}>Гринвич</Text>
         </View>
         <View style={[{width: '33%', alignItems: 'center'}]}>
-          <Text style={[{fontSize: 20}]}>Пассаж</Text>
+          <Text style={[{fontSize: 20, fontFamily: 'Montserrat-SemiBold'}]}>Пассаж</Text>
         </View>
         <View style={[{alignItems: 'center', width: '31%'}]}>
-          <Text style={[{fontSize: 20}]}>21 октября </Text>
+          <Text style={[{fontSize: 20, fontFamily: 'Montserrat-SemiBold'}]}>21 октября </Text>
         </View>
       </View>
     </TouchableOpacity>
