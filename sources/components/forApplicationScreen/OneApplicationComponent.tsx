@@ -80,16 +80,19 @@ const styles = StyleSheet.create({
     fontSize: 17,
     fontWeight: '600',
     color: 'black',
+    fontFamily: 'Montserrat-Bold'
   },
   infoLabel: {
     fontSize: 13,
     color: 'gray',
     textAlign: 'center',
+    fontFamily: 'Montserrat-SemiBold'
   },
   infoValue: {
     fontSize: 24,
     fontWeight: '600',
     textAlign: 'center',
     color: 'black',
+    fontFamily: 'Montserrat-Bold'
   },
 });

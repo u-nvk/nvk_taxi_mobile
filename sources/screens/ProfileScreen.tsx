@@ -100,9 +100,10 @@ function ProfileScreen({navigation}: {navigation: NavigationProp<any>}) {
 const styles = StyleSheet.create({
   isDriverText: {
     color: 'black',
-    fontSize: 24,
+    fontSize: 27,
     fontWeight: '600',
     marginTop: '5%',
+    fontFamily: 'Montserrat-ExtraBold'
   },
   checkBoxView: {
     flexDirection: 'row',
@@ -126,13 +127,15 @@ const styles = StyleSheet.create({
   },
   textValue: {
     color: 'black',
-    fontSize: 18,
+    fontSize: 22,
     fontWeight: '400',
+    fontFamily: 'Montserrat-SemiBold'
   },
   textLabel: {
     color: 'black',
-    fontSize: 20,
+    fontSize: 23,
     fontWeight: '500',
+    fontFamily: 'Montserrat-SemiBold'
   },
   container: {
     flex: 1,
