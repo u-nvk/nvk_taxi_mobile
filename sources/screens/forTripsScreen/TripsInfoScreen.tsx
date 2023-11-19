@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'black',
     fontSize: 20,
-    fontFamily: 'Montserrat-Bold'
+    fontFamily: 'Montserrat-Bold',
   },
   buttonStyle: {
     borderRadius: 10,
@@ -120,20 +120,20 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: 'gray',
     textAlign: 'center',
-    fontFamily: 'Montserrat-SemiBold'
+    fontFamily: 'Montserrat-SemiBold',
   },
   infoValue: {
     fontSize: 21,
     fontWeight: '600',
     textAlign: 'center',
     color: 'black',
-    fontFamily: 'Montserrat-SemiBold'
+    fontFamily: 'Montserrat-SemiBold',
   },
   nameText: {
     fontSize: 18,
     fontWeight: '600',
     color: 'black',
-    fontFamily: 'Montserrat-SemiBold'
+    fontFamily: 'Montserrat-SemiBold',
   },
   infoView: {
     paddingHorizontal: '5%',

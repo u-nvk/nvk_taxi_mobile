@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     fontSize: 27,
     fontWeight: '600',
     marginTop: '5%',
-    fontFamily: 'Montserrat-ExtraBold'
+    fontFamily: 'Montserrat-ExtraBold',
   },
   checkBoxView: {
     flexDirection: 'row',
@@ -129,13 +129,13 @@ const styles = StyleSheet.create({
     color: 'black',
     fontSize: 22,
     fontWeight: '400',
-    fontFamily: 'Montserrat-SemiBold'
+    fontFamily: 'Montserrat-SemiBold',
   },
   textLabel: {
     color: 'black',
     fontSize: 23,
     fontWeight: '500',
-    fontFamily: 'Montserrat-SemiBold'
+    fontFamily: 'Montserrat-SemiBold',
   },
   container: {
     flex: 1,
