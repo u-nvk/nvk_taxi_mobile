@@ -36,14 +36,14 @@ function TripsScreen({navigation}: {navigation: NavigationProp<any>}) {
         {isInCampus
           ? trips.inCampus.map((e, index) => (
               <OneApplicationComponent
-                route={'Розы Люксембург 49 -- Кампус'}
+                route={'Розы Люксембург 49 ➙ Кампус'}
                 key={index}
                 navigation={navigation}
               />
             ))
           : trips.outCampus.map((e, index) => (
               <OneApplicationComponent
-                route={'Кампус -- Розы Люксембург 49'}
+                route={'Кампус ➙ Розы Люксембург 49'}
                 key={index}
                 navigation={navigation}
               />

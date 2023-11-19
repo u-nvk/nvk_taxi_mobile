@@ -9,7 +9,7 @@ function TripsInfoScreen() {
       <View style={styles.infoAndButtonView}>
         <View style={styles.infoView}>
           <View style={{width: '100%', flex: 0.1}}>
-            <Text style={styles.nameText}>Розы Люксембург 49 -- Кампус</Text>
+            <Text style={styles.nameText}>Розы Люксембург 49 ➙ Кампус</Text>
           </View>
 
           <View style={styles.priceStyle}>
@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: 'gray',
     textAlign: 'center',
-    fontFamily: 'Montserrat-Medium'
+    fontFamily: 'Montserrat-SemiBold'
   },
   infoValue: {
     fontSize: 21,
